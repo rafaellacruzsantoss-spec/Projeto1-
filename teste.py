@@ -1,8 +1,7 @@
 import streamlit as st
 
 st.title('Teste ECMI 2')
-st.write("Sejam Bem Vindos ao aplicativo mais inovador!")
-import streamlit as st
+st.write("Seja Bem Vindo ao aplicativo mais inovador!")
 
-st.image("https://www.transportal.com.br/noticias/wp-content/uploads/2019/09/Praia-de-Gerib%C3%A1.jpg", width=200)
+st.image("https://img.elo7.com.br/product/zoom/3559173/placas-boas-vindas-recepcao-casamento.jpg", width=200)
 
