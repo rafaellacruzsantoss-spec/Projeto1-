@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title('DIVA')
+st.title('Iara')
+st.subtitle('Nas ondas das inspirações')
 st.write("Seja Bem Vindo ao aplicativo mais inovador!")
 
 st.image("https://img.elo7.com.br/product/zoom/3559173/placas-boas-vindas-recepcao-casamento.jpg", width=200)
@@ -11,5 +12,5 @@ st.image("https://cdn-ileapbh.nitrocdn.com/awswdmxduTjCKQiPPVuNWTjlobpOKWLT/asse
 
 nome = st.text_input("Digite um lugar que te inspire")
 if nome:
-     st.write(nome, 'parece incrível')
+     st.write(nome, 'parece ser incrível')
 
