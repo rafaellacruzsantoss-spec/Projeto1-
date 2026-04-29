@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.title('Iara')
+st.title('')
 st.write('Nas ondas das inspirações')
-st.write("Seja Bem Vindo ao aplicativo mais inovador!")
+st.write("Seja bem vindo ao aplicativo mais inovador!")
 
-st.image("https://img.elo7.com.br/product/zoom/3559173/placas-boas-vindas-recepcao-casamento.jpg", width=200)
+st.image("https://lens.usercontent.google.com/image?vsrid=CJ6VsYmKx8vZNBACGAEiJGNkNWUzZDhiLTcwNTYtNGUzYy05NDNkLTgyYWYwOTFhZjU1OTJ7IgJjZigNQnMKLmxmZS1kdW1teToxOGVjNDlkOS0xNTAwLTRjY2QtYWVmNi0zMGM0Y2U0YjI4ZDESQQo_L2Jucy9jZi9ib3JnL2NmL2Jucy9sZW5zLWZyb250ZW5kLWFwaS9wcm9kLmxlbnMtZnJvbnRlbmQtYXBpLzUwONjdvsKik5QD&gsessionid=8SRQZQFX9isdrN1mjd661oIherkd6NfWi26BlRE85y6pyc6-xQFEBg", width=200)
 from PIL import Image
 
 # Você pode passar o caminho direto como string
