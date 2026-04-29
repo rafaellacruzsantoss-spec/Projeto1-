@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Inspire')
+st.title('Trips for life')
 st.write('Nas ondas das inspirações')
 st.write("Seja bem vindo ao aplicativo mais inovador!")
 
