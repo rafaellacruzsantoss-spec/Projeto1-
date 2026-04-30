@@ -8,5 +8,5 @@ st.image("https://gkpb.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg",
 
 nome = st.text_input("Antes de comerçamos, escreva seu nome:")
 if nome:
-     st.write(nome, 'muito bem!Iremos agora conduzir para a criação da biblioteca.')
+     st.write(nome, ', muito bem!Agora iremos conduzir para a criação da biblioteca.')
 
