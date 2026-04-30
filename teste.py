@@ -9,7 +9,7 @@ st.image("https://gkpb.com.br/wp-content/uploads/2017/08/novo-logo-youtube.jpg",
 nome = st.text_input("Antes de comerçamos, escreva seu nome:")
 if nome:
      st.write(nome, ', muito bem!Agora iremos conduzir para a criação da biblioteca.')
-https://api.nytimes.com/svc/books/v3/lists/overview.json
+
 # Demo code sample. Not indended for production use.
 # See instructions for installing Requests module for Python
 # https://requests.readthedocs.io/en/master/user/install/#install
