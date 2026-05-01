@@ -1,8 +1,1 @@
-
-echo "# minha-api-rest1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/rafaellacruzsantoss-spec/minha-api-rest1.git
-git push -u origin main
+https://api.nytimes.com/svc/books/v3/lists/overview.json
