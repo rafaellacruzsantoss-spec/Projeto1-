@@ -12,6 +12,7 @@ if nome:
 from bs4 import BeautifulSoup
 url = "https://www.nytimes.com/books/best-sellers/"
 headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"} 
+response = requests.get(url, headers=headers)
 # O passo crucial: baixar o conteúdo
 soup = BeautifulSoup(response.content, "html.parser")
 elemento = soup.find("div", {"class": "autor"})
