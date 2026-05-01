@@ -9,20 +9,18 @@ if nome:
  st.image("https://offloadmedia.feverup.com/riodejaneirosecreto.com/wp-content/uploads/2023/04/13070413/Real-Gabinete-Portugues.jpg", caption="Real Gabinete português de Leitura, Rio de Janeiro")
  st.write("De início, é possível notar a extrema importância que a literatura exerce no papel de construção de cada individuo na sociedade. Assim, esse aplicativo busca informar e incentivar o consumo literario baseado em dicas para a permanência dessa prática no seu cotidiano.")
  import requests
- from bs4 import BeatifulSoup
- url = "https://www.nytimes.com/books/best-sellers/"
- site = requests.get(url, headers=header)
- soup = BeautifulSoup(site.content)
-# ... código anterior ...
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"
-
-# Buscando a div específica
-elemento = soup.find("div", {"class": "autor"}) 
+from bs4 import BeautifulSoup
+url = "https://www.nytimes.com/books/best-sellers/"
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11" "} 
+# O passo crucial: baixar o conteúdo
+soup = BeautifulSoup(response.content, "html.parser")
+elemento = soup.find("div", {"class": "autor"})
 
 if elemento:
     print(elemento.text)
 else:
-    print("Não encontrei o que você procurava.")
+    print("A classe 'autor' não foi encontrada nesta página.")
+
   
 
 
