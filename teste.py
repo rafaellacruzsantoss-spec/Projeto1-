@@ -1,7 +1,7 @@
 import streamlit as st
 st.title('Guia de Livros ')
 st.write("Seja bem vindo ao mais novo aplicativo que ajudará a você estar mais conectado com pautas literárias!")
- from PIL import Image
+from PIL import Image
  nome = st.text_input("Antes de comerçamos, escreva seu nome:")
  if nome:
  st.write(nome,', muito bem!Agora iremos conduzir você para a criação da sua biblioteca.')
