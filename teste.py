@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
 dados = resposta.json()
 soup = BeautifulSoup (site.content)
-lista = soup.find_all("rank",["weeks_on_list": "title"])
+lista = soup.find_all("author",["weeks_on_list": "title"])
 
 
 
