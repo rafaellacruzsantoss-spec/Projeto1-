@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"}
 
 # 2. O Endereço (Coloque o site que você quer aqui)
-url = "https://www.google.com" 
+url = "https://www.nytimes.com/books/best-sellers/" 
 
 # 3. A CONEXÃO (A linha que está faltando!)
 # Ela "baixa" o site e guarda tudo dentro da palavra 'response'
