@@ -29,12 +29,12 @@ st.write(f"Status da conexão: {response.status_code}")
 soup = BeautifulSoup(response.content, "html.parser")
 
 # 6. Procurar o que você quer
-elemento = soup.find("div", {"list": "autor"})
+elemento = soup.find("div", {"class": "alt"})
 
 if elemento:
     st.write(elemento.text)
 else:
-    st.write("Não encontrei a list 'autor' nesse site.")
+    st.write("Não encontrei a classe 'alt' nesse site.")
 
   
 
