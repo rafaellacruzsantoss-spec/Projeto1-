@@ -1,7 +1,7 @@
 import streamlit as st
 st.title('Guia de Livros ')
 st.write("Seja bem vindo ao mais novo aplicativo que ajudará a você estar mais conectado com pautas literárias!")
-respostas= requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
+respostas= requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")("https://github.com/rafaellacruzsantoss-spec/minha-api-rest1.git")
 from PIL import Image
 nome = st.text_input("Antes de comerçamos, escreva seu nome:")
 if nome:
