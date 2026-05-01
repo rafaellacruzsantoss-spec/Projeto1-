@@ -1,2 +1,3 @@
 $ pipx install git+https://github.com/internetarchive/openlibrary-client.git
+../../../static/openapi.json
 
