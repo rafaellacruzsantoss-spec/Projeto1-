@@ -12,6 +12,9 @@ import requests
 import random
 resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
 dados = resposta.json()
+ranking = []
+minha_lista = rank
+len(minha_lista)
 
 
 
