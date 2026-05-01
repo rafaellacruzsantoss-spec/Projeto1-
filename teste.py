@@ -10,7 +10,11 @@ if nome:
  st.write("De início, é possível notar a extrema importância que a literatura exerce no papel de construção de cada individuo na sociedade. Assim, esse aplicativo busca informar e incentivar o consumo literario baseado em dicas para a permanência dessa prática no seu cotidiano.")
  import requests
  from bs4 import BeatifulSoup
- url = https://www.nytimes.com/books/best-sellers/
+ url = "https://www.nytimes.com/books/best-sellers/"
+ site = requests.get(url, headers=header)
+ soup = BeautifulSoup(site.content)
+ print=soup.find("div",["autor";"nome do livro"]
+  
 
 
 
