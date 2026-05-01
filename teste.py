@@ -33,8 +33,6 @@ elemento = soup.find("div", {"stactiText": "Livros"})
 
 if elemento:
     st.write(elemento.text)
-else:
-    st.write("Não encontrei a stactiText'Livros' nesse site.")
 
   
 
