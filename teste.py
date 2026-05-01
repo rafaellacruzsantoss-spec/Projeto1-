@@ -14,7 +14,7 @@ resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list
 dados = resposta.json()
 soup = BeautifulSoup (site.content)
 print = (soup.find("rank",{"author":"title"})get_text())
-lista = soup.find_all("author",["publisher": "title"])
+
 
 
 
