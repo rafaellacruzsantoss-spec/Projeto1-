@@ -11,7 +11,7 @@ if nome:
  import requests
  from bs4 import BeatifulSoup
  url = "https://www.nytimes.com/books/best-sellers/"
- header = {
+ st.header = {
   user.agent: "header = {
 User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"
     "}
