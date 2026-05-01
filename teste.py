@@ -12,7 +12,7 @@ import requests
 import random
 resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
 dados = resposta.json()
-lista = soup.find_all("rank",["weeks_on_list":"title"])
+lista = soup.find_all("rank",["weeks_on_list": "title"])
 
 
 
