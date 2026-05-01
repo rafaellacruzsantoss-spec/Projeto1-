@@ -12,7 +12,6 @@ import requests
 import random
 resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
 dados = resposta.json()
-contador = 0
 lista = soup.find_all("rank",["weeks_on_list":"title"])
 
 
