@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"}
 
 # 2. O Endereço (Coloque o site que você quer aqui)
-url = "https://www.nytimes.com/books/best-sellers/" 
+url = "https://www.amazon.com.br/b?ie=UTF8&node=203733243011" 
 
 # 3. A CONEXÃO (A linha que está faltando!)
 # Ela "baixa" o site e guarda tudo dentro da palavra 'response'
@@ -29,12 +29,12 @@ st.write(f"Status da conexão: {response.status_code}")
 soup = BeautifulSoup(response.content, "html.parser")
 
 # 6. Procurar o que você quer
-elemento = soup.find("div", {"class": "books"})
+elemento = soup.find("div", {"class": "nome do livro"})
 
 if elemento:
     st.write(elemento.text)
 else:
-    st.write("Não encontrei a classe 'books' nesse site.")
+    st.write("Não encontrei a classe 'nome do livro' nesse site.")
 
   
 
