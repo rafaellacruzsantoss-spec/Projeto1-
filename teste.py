@@ -13,7 +13,16 @@ if nome:
  url = "https://www.nytimes.com/books/best-sellers/"
  site = requests.get(url, headers=header)
  soup = BeautifulSoup(site.content)
- print=soup.find("div",["autor":"nome do livro"]
+# ... código anterior ...
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"
+
+# Buscando a div específica
+elemento = soup.find("div", {"class": "autor"}) 
+
+if elemento:
+    print(elemento.text)
+else:
+    print("Não encontrei o que você procurava.")
   
 
 
