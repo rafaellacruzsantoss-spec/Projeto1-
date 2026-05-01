@@ -12,9 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 resposta = requests.get("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
 dados = resposta.json()
-soup = BeautifulSoup ("https://api.nytimes.com/svc/books/v3/lists/{date}/{list}.json")
-(soup.find("rank",{"author":"title"})get_text())
-lista = soup.find_all("rank", {"author": "title"})
+
 
 
 
