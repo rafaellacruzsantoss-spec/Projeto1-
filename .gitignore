@@ -1,1 +1,2 @@
-https://api.nytimes.com/svc/books/v3/lists/overview.json
+$ pipx install git+https://github.com/internetarchive/openlibrary-client.git
+
