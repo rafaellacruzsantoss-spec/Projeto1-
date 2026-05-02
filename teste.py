@@ -47,7 +47,7 @@ if autor_input:
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
  
-    st.link_button("Ver no Goodreads", livro['link'])
+    st.link_button("Ver no Goodreads", livros do autor_input['link'])
     
     st.divider()
 else:
