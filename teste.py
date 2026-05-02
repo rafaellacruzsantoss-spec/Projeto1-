@@ -21,8 +21,6 @@ url = "https://www.amazon.com.br/b?ie=UTF8&node=203733243011"
 # 3. A CONEXÃO (A linha que está faltando!)
 # Ela "baixa" o site e guarda tudo dentro da palavra 'response'
 response = requests.get(url, headers=headers)
-#4 O status 200 que você recebeu veio daqui:
-st.write(f"Status: {response.status_code}")
 
 # Agora transformamos o conteúdo em algo "legível" para o Python
 soup = BeautifulSoup(response.content, "html.parser")
