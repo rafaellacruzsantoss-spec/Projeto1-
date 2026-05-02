@@ -23,12 +23,12 @@ if menu == "Início":
     st.title("Use o menu ao lado para mais informações!")
 elif menu == "Dicas":
     st.title("💡 Dicas para iniciantes")
-    st.markdown("## 1. Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
-    st.markdown("## 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico.")
-    st.markdown("## 3. Mediação da letura: explorar ilustrações e detalhes do livro.")
-    st.markdown("## 4. Reservar um tempo específio de leitura diária.")
-    st.markdown("## 5. Procure sempre estar se questionando e pesquisando sobre conteúdos presentes nas obras literárias, para aumentar o conhecimento.")
-    st.write("Para o hábito de leitura continuar existindo e se tornar cada vez mais presente no dia a dia!")         
+    st.markdown("# 1. Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
+    st.markdown("# 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico.")
+    st.markdown("# 3. Mediação da letura: explorar ilustrações e detalhes do livro.")
+    st.markdown("# 4. Reservar um tempo específio de leitura diária.")
+    st.markdown("# 5. Procure sempre estar se questionando e pesquisando sobre conteúdos presentes nas obras literárias, para aumentar o conhecimento.")
+    st.write("#Para o hábito de leitura continuar existindo e se tornar cada vez mais presente no dia a dia!")         
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
@@ -48,7 +48,7 @@ if autor_input:
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
  
-    st.link_button("Ver no Goodreads"['link'])
+    st.link_button("Ver no Goodreads",livro")
     
     st.divider()
 else:
