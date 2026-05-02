@@ -55,15 +55,13 @@ except Exception as e:
 
 # --- PARTE 3: LISTA PRONTA DE OUTROS AUTORES ---
 st.sidebar.header("Sugestões de Autores")
-outros_autores = ["Machado de Assis", "Guimarães Rosa", "Lygia Fagundes Telles", "Jorge Amado"]
 
 for sugerido in outros_autores:
     if st.sidebar.button(sugerido):
         # Esse botão recarrega a página pesquisando o autor clicado
         st.info(f"Clique na barra de pesquisa e digite '{sugerido}' para explorar!")
 
-
-    st.write(f"📖 **{livro['titulo']}** — escrito por: *{livro['autor']}*")
+    st.write(f"📖 {livro['titulo']} — escrito por: *{livro['autor']}*")
 
 
 
