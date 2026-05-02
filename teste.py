@@ -39,6 +39,23 @@ else:
 soup = BeautifulSoup(response.content, "html.parser")
 # 6. Procurar o que você quer
 elemento = soup.find("div", {"stactiText": "Livros"})
+# Supondo que os títulos estejam em tags <h3> e autores em <span>
+titulos = soup.find_all("h3")
+autores = soup.find_all("span")
+
+# Vamos criar uma lista para guardar os dados
+biblioteca = []
+
+# O zip combina as duas listas: o primeiro título com o primeiro autor, etc.
+for t, a in zip(titulos, autores):
+    biblioteca.append({
+        "titulo": t.text.strip(),
+        "autor": a.text.strip()
+    })
+
+# Agora mostramos no Streamlit
+for livro in biblioteca[:5]: # Mostra os 5 primeiros
+    st.write(f"📖 **{livro['titulo']}** — escrito por: *{livro['autor']}*")
 
 
 
