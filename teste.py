@@ -18,14 +18,11 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 # 1. Primeiro você cria o input
 autor_para_buscar = st.text_input("Digite o nome do autor:")
-# Inicializa para evitar que a linha 25 quebre no primeiro carregamento
-autor_para_buscar = "" 
-
-# ... resto do código ...
-
-url = f"https://www.goodreads.com/search?q={autor_para_buscar.replace(' ', '+')}"
-
-
+# 2. Só executa se a variável não estiver vazia
+if autor_para_buscar:
+    url = f"https://www.goodreads.com/search?q={autor_para_buscar.replace(' ', '+')}"
+    st.write(f"### 🔗 Link de busca para: {autor_para_buscar}")
+    st.link_button("Ver no Goodreads", url:"https://www.goodreads.com/search")
 try:
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
