@@ -21,18 +21,26 @@ url = "https://www.amazon.com.br/b?ie=UTF8&node=203733243011"
 # 3. A CONEXÃO (A linha que está faltando!)
 # Ela "baixa" o site e guarda tudo dentro da palavra 'response'
 response = requests.get(url, headers=headers)
+#4 O status 200 que você recebeu veio daqui:
+st.write(f"Status: {response.status_code}")
 
-# 4. Mostrar o resultado no Streamlit
-st.write(f"Status da conexão: {response.status_code}")
-
-# 5. Criar a "sopa" para ler o HTML
+# Agora transformamos o conteúdo em algo "legível" para o Python
 soup = BeautifulSoup(response.content, "html.parser")
 
+# Exemplo: Pegar o texto de uma div que tem a classe 'autor'
+elemento = soup.find("div", {"class": "autor"})
+
+if elemento:
+    st.subheader("Informação encontrada:")
+    st.write(elemento.text) # Mostra o texto que está dentro da div
+else:
+    st.warning("Conectei ao site, mas não encontrei o que você procurou.")
+# 5. Criar a "sopa" para ler o HTML
+soup = BeautifulSoup(response.content, "html.parser")
 # 6. Procurar o que você quer
 elemento = soup.find("div", {"stactiText": "Livros"})
 
-if elemento:
-    st.write(elemento.text)
+
 
   
 
