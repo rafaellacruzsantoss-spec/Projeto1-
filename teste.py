@@ -29,11 +29,8 @@ if autor_input:
     
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
-    
-    # Exibição organizada com H3
-    st.markdown(f"### 🔗 Link Gerado")
     st.write(f"Clique abaixo para ver os livros de **{autor_input}**:")
-    st.link_button("Abrir no Goodreads", url)
+   
 else:
     st.info("Aguardando você digitar um autor para gerar o link...")
 try:
