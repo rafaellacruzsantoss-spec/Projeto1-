@@ -20,7 +20,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 autor_para_buscar = st.text_input("Digite o nome do autor:")
 # 2. Só executa se a variável não estiver vazia
 if autor_para_buscar:
-    url = f"https://www.goodreads.com/search?q={autor_para_buscar.replace(' ', '+')}"
+    url = f"https://www.goodreads.com?q={autor_para_buscar.replace(' ', '+')}"
     st.write(f"### 🔗 Link de busca para: {autor_para_buscar}")
     st.link_button("Ver no Goodreads, {url}")
 try:
@@ -47,8 +47,7 @@ try:
         st.error(f"Erro ao conectar: {response.status_code}")
 except Exception as e:
     st.error(f"Ocorreu um erro: {e}")
-
-    st.write(f"📖 {livro['titulo']} — escrito por: *{livro['autor']}*")
+ st.write(f"📖 {livro['titulo']} — escrito por: *{livro['autor']}")
 
 
 
