@@ -16,13 +16,6 @@ from bs4 import BeautifulSoup
 st.title("📚 Explorador de Livros")
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"}
 
-# 1. Primeiro você cria o input
-import streamlit as st
- 2. Só processe a URL se o usuário tiver digitado algo
-if autor_input:
-    # Formatamos o texto para a URL (substituindo espaços por +)
-    autor_formatado = autor_input.strip().replace(" ", "+")
-
 # 1. Capture o input do usuário primeiro
 autor_input = st.text_input("Digite o nome do autor para buscar no Goodreads:")
 
