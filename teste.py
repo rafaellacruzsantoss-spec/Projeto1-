@@ -17,12 +17,25 @@ st.title("📚 Explorador de Livros")
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"}
 
 # 1. Primeiro você cria o input
-autor_para_buscar = st.text_input("Digite o nome do autor:")
-# 2. Só executa se a variável não estiver vazia
-if autor_para_buscar:
-    url = f"https://www.goodreads.com/genres?q={autor_para_buscar.replace(' ', '+')}"
-    st.write(f"### 🔗 Link de busca para: {autor_para_buscar}")
-    st.link_button("Ver no Goodreads, {url}")
+import streamlit as st
+
+# 1. Capture o input do usuário primeiro
+autor_input = st.text_input("Digite o nome do autor para buscar no Goodreads:")
+
+# 2. Só processe a URL se o usuário tiver digitado algo
+if autor_input:
+    # Formatamos o texto para a URL (substituindo espaços por +)
+    autor_formatado = autor_input.strip().replace(" ", "+")
+    
+    # URL correta de busca do Goodreads
+    url = f"https://www.goodreads.com/search?q={autor_formatado}"
+    
+    # Exibição organizada com H3
+    st.markdown(f"### 🔗 Link Gerado")
+    st.write(f"Clique abaixo para ver os livros de **{autor_input}**:")
+    st.link_button("Abrir no Goodreads", url)
+else:
+    st.info("Aguardando você digitar um autor para gerar o link...")
 try:
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
