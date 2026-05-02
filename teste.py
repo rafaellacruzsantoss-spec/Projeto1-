@@ -26,13 +26,25 @@ autor_input = st.text_input("Digite o nome do autor:")
 if autor_input:
     # Formatamos o texto para a URL (substituindo espaços por +)
     autor_formatado = autor_input.strip().replace(" ", "+")
+  import streamlit as st
+
+# 1. Capture o input do usuário primeiro
+autor_input = st.text_input("Digite o nome do autor para buscar no Goodreads:")
+
+# 2. Só processe a URL se o usuário tiver digitado algo
+if autor_input:
+    # Formatamos o texto para a URL (substituindo espaços por +)
+    autor_formatado = autor_input.strip().replace(" ", "+")
     
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
+    
+    # Exibição organizada com H3
+    st.markdown(f"### 🔗 Link Gerado")
     st.write(f"Clique abaixo para ver os livros de **{autor_input}**:")
-   
+    st.link_button("Abrir no Goodreads", url)
 else:
-    st.info("Aguardando você digitar um autor para gerar o link...")
+    st.info("Aguardando você digitar um autor para gerar o link...")  
 try:
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
