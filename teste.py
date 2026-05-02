@@ -18,7 +18,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 # --- PARTE 1: BARRA DE PESQUISA ---
 st.subheader("Pesquisar novo autor")
-pesquisa = st.text_input("Digite o nome de um autor (ex: Machado de Assis):")
+pesquisa = st.text_input("Digite o nome de um autor:")
 
 
 # --- PARTE 2: A CONEXÃO ---
