@@ -44,7 +44,7 @@ try:
         # Como não tem classe, vamos buscar todos os títulos h3 (comum em buscas)
         titulos_encontrados = soup.find_all("h3")
 
-        st.write(f"### Resultados para: {autor_para_buscar}")
+        st.write(f"### Resultados para: {autor_input}")
         
         if titulos_encontrados:
             # Mostra os 3 primeiros resultados
