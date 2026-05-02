@@ -49,7 +49,6 @@ if autor_input:
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
 else:
     st.info("Aguardando você digitar um autor para gerar o link...") 
- st.set_page_config(
     page_title="Guia de Livros ",
     page_icon="📚",
     layout="wide"
