@@ -20,7 +20,7 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 import streamlit as st
 
 # 1. Capture o input do usuário primeiro
-autor_input = st.text_input("Digite o nome do autor para buscar no Goodreads:")
+autor_input = st.text_input("Digite o nome do autor:")
 
 # 2. Só processe a URL se o usuário tiver digitado algo
 if autor_input:
