@@ -30,7 +30,6 @@ if menu == "Buscar Livros":
 
 elif menu == "Dicas para iniciantes":
     st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:"
-    st.write("
              
 import streamlit as st
 import requests
