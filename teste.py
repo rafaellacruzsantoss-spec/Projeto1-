@@ -47,10 +47,6 @@ if autor_input:
     
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
- 
-    st.link_button("Ver no Goodreads",livro")
-    
-    st.divider()
 else:
     st.info("Aguardando você digitar um autor para gerar o link...") 
 
