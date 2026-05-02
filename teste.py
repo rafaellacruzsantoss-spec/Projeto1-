@@ -20,9 +20,6 @@ headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 st.subheader("Pesquisar novo autor")
 pesquisa = st.text_input("Digite o nome de um autor (ex: Machado de Assis):")
 
-# Se o usuário digitar algo, a variável 'autor_para_buscar' vira o que ele digitou
-# Se não, usamos a Clarice como padrão inicial
-autor_para_buscar = pesquisa if pesquisa else "Clarice Lispector"
 
 # --- PARTE 2: A CONEXÃO ---
 # Vamos usar o Google Books ou um site de busca para encontrar os títulos
