@@ -20,7 +20,7 @@ with st.sidebar:
         ("Buscar Livros", "Dicas")
 
 # Lógica do Menu
-if menu == "Início":
+if menu == "Início"
     st.header("🔍")
     
 
