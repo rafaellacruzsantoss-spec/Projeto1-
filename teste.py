@@ -30,7 +30,7 @@ if autor_input:
     # Exibição organizada com H3
     st.markdown(f"### 🔗 Link Gerado")
     st.write(f"Clique abaixo para ver os livros de **{autor_input}**:")
-    st.link_button("Abrir no Goodreads", url)
+    st.link_button("Abrir no Goodreads")
 else:
     st.info("Aguardando você digitar um autor para gerar o link...")  
 try:
