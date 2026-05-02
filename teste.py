@@ -26,7 +26,7 @@ autor_para_buscar = pesquisa if pesquisa else "Clarice Lispector"
 
 # --- PARTE 2: A CONEXÃO ---
 # Vamos usar o Google Books ou um site de busca para encontrar os títulos
-url = f"https://www.amazon.com.br/b?ie=UTF8&node=203733243011?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
+url = f"https://standardebooks.org/ebooks?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
 
 try:
     response = requests.get(url, headers=headers)
@@ -58,7 +58,7 @@ st.sidebar.header("Sugestões de Autores")
 # Verifique se a lista não está nula/vazia
 if outros_autores:
     st.subheader("Outras sugestões para você:")
-    for sugerido in outros_autores:
+for sugerido in outros_autores:
         # Usando o H3 (###) para manter a organização
         st.write(f"### 📖 {sugerido['titulo']}")
         st.write(f"**Escrito por:** {sugerido['autor']}")
