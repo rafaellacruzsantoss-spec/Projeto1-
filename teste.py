@@ -31,14 +31,7 @@ if autor_input:
     
     st.divider()
 else:
-    st.info("Aguardando você digitar um autor para gerar o link...")  
-try:
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
-        
-        # Como não tem classe, vamos buscar todos os títulos h3 (comum em buscas)
-        titulos_encontrados = soup.find_all("h3")
+    st.info("Aguardando você digitar um autor para gerar o link...") 
 
  
 
