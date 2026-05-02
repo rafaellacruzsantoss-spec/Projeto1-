@@ -26,33 +26,11 @@ if menu == "Início":
 elif menu == "Buscar Livros":
     st.title("🔍 Buscar no Goodreads")
     autor = st.text_input("Nome do autor:")
-    
-    if autor:
-        # H3 organizado para os resultados
-        st.markdown(f"### 📖 Resultados para: {autor}")
-        st.info("Aqui entrará sua lógica de scraping...")
-
 elif menu == "Dicas":
-    st.title("💡 Dicas de Leitura")
-    st.markdown("### 1. Clássicos")
-    st.write("Dom Casmurro - Machado de Assis")
-# Criando o menu na barra lateral
-with st.sidebar:
-    st.title("Sugestões para iniciantes")
-    # O selectbox funciona como o seletor do menu
-    menu = st.radio
-        ("Buscar Livros", "Dicas")
-
-# Lógica do Menu
-if menu == "Início"
-    st.header("🔍")
-    
-
-elif menu == "Dicas para iniciantes":
-    st.title("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:")
-    st.write("1) Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
-    st.write("2) Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico."
-             
+    st.title("💡 Dicas para iniciantes")
+    st.markdown("### 1.Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
+    st.markdown("### 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico."
+    st.write("Para o hábito de leitura continuar existindo e se tornar cada vez mais presente no dia a dia!")         
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
