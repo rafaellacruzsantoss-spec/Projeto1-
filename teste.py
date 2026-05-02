@@ -10,6 +10,32 @@ if nome:
  st.write("De início, é possível notar a extrema importância que a literatura exerce no papel de construção de cada individuo na sociedade. Assim, esse aplicativo busca informar e incentivar o consumo literario baseado em dicas para a permanência dessa prática no seu cotidiano.")
  st.write("Neste aplicativo temos uma página repleta de dicas para iniciantes de liretura como estudo mas também como hobby! Prezamos múltiplas interações de diferentes aspectos da literatura.")
 import streamlit as st
+
+# Criando o menu na barra lateral
+with st.sidebar:
+    st.title("📌 Navegação")
+    # O selectbox funciona como o seletor do menu
+    menu = st.radio(
+        "Escolha uma opção:",
+        ("Buscar Livros", "Meus Favoritos", "Sobre o Projeto")
+    )
+
+# Lógica do Menu
+if menu == "Buscar Livros":
+    st.header("🔍 Scraper de Livros")
+    autor = st.text_input("Digite o autor:")
+    # ... aqui vai o seu código de scraping com H3 ...
+    if autor:
+        st.markdown(f"### 📖 Resultados para {autor}")
+
+elif menu == "Meus Favoritos":
+    st.header("⭐ Livros Salvos")
+    st.write("Sua lista de leitura aparecerá aqui.")
+
+elif menu == "Sobre o Projeto":
+    st.header("ℹ️ Sobre")
+    st.write("Este site utiliza scraping do Goodreads para organizar sua biblioteca.")
+import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 
