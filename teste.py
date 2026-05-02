@@ -22,8 +22,7 @@ pesquisa = st.text_input("Digite o nome de um autor:")
 
 
 # --- PARTE 2: A CONEXÃO ---
-# Vamos usar o Google Books ou um site de busca para encontrar os títulos
-url = f"https://standardebooks.org/ebooks?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
+url = f"https://www.goodreads.com/?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
 
 try:
     response = requests.get(url, headers=headers)
