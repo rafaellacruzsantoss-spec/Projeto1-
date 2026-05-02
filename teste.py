@@ -26,15 +26,7 @@ if autor_input:
     
     # URL correta de busca do Goodreads
     url = f"https://www.goodreads.com/search?q={autor_formatado}"
-    
-    # Exibição organizada com H3
-    for livro in resultados:
-    # H3 para o título - Bem organizado
-    st.markdown(f"### 📖 {livro['titulo']}")
-    
-    st.write(f"✍️ **Autor:** {livro['autor']}")
-    
-    # AQUI ESTAVA O ERRO: Agora passamos livro['link'] como segundo argumento
+ 
     st.link_button("Ver no Goodreads", livro['link'])
     
     st.divider()
