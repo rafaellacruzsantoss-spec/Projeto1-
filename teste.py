@@ -41,23 +41,6 @@ try:
         titulos_encontrados = soup.find_all("h3")
 
         st.write(f"### Resultados para: {autor_input}")
-        
-        if titulos_encontrados:
-            # Mostra os 3 primeiros resultados
-            for item in titulos_encontrados[:3]:
-                texto = item.text.strip()
-                # Filtramos para não mostrar coisas que não são livros (como 'Vídeos' ou 'Imagens')
-                if len(texto) > 3:
-                    st.success(f"📖 {texto}")
-        else:
-            st.warning("Não encontrei títulos específicos no momento.")
-            
-    else:
-        st.error(f"Erro ao conectar: {response.status_code}")
-except Exception as e:
-    st.error(f"Ocorreu um erro: {e}")
-
-
 
 
   
