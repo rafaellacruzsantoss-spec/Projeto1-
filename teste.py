@@ -10,7 +10,32 @@ if nome:
  st.write("De início, é possível notar a extrema importância que a literatura exerce no papel de construção de cada individuo na sociedade. Assim, esse aplicativo busca informar e incentivar o consumo literario baseado em dicas para a permanência dessa prática no seu cotidiano.")
  st.write("Neste aplicativo temos uma página repleta de dicas para iniciantes de liretura como estudo mas também como hobby! Prezamos múltiplas interações de diferentes aspectos da literatura.")
 import streamlit as st
+import streamlit as st
 
+# Configuração da Barra Lateral
+with st.sidebar:
+    st.header("📌 Navegação")
+    # Criando o menu sem recuos desnecessários
+    menu = st.radio("Ir para:", ["Início", "Buscar Livros", "Dicas"])
+
+# Lógica das Páginas
+if menu == "Início":
+    st.title("🏠 Bem-vindo ao Sistema")
+    st.write("Use o menu ao lado para navegar.")
+
+elif menu == "Buscar Livros":
+    st.title("🔍 Buscar no Goodreads")
+    autor = st.text_input("Nome do autor:")
+    
+    if autor:
+        # H3 organizado para os resultados
+        st.markdown(f"### 📖 Resultados para: {autor}")
+        st.info("Aqui entrará sua lógica de scraping...")
+
+elif menu == "Dicas":
+    st.title("💡 Dicas de Leitura")
+    st.markdown("### 1. Clássicos")
+    st.write("Dom Casmurro - Machado de Assis")
 # Criando o menu na barra lateral
 with st.sidebar:
     st.title("Sugestões para iniciantes")
