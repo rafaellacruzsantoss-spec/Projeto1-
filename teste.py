@@ -13,12 +13,11 @@ import streamlit as st
 
 # Criando o menu na barra lateral
 with st.sidebar:
-    st.title("Sugestôes para iniciantes")
+    st.title("Sugestões para iniciantes")
     # O selectbox funciona como o seletor do menu
     menu = st.radio(
         "Escolha uma opção:",
         ("Buscar Livros", "Dicas")
-    )
 
 # Lógica do Menu
 if menu == "Inicío":
@@ -26,7 +25,9 @@ if menu == "Inicío":
     
 
 elif menu == "Dicas para iniciantes":
-    st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:")
+    st.title("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:")
+    st.write("1) Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
+    st.write("2) Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico."
              
 import streamlit as st
 import requests
