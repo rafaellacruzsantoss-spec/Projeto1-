@@ -27,7 +27,7 @@ elif menu == "Dicas":
     st.markdown("## 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico.")
     st.markdown("## 3. Mediação da letura: explorar ilustrações e detalhes do livro.")
     st.markdown("## 4. Reservar um tempo específio de leitura diária.")
-    st.markdown("## 5. Procure sempre estar se questionando e pesquisando sobre conteúdos presentes nas obras literárias, para aumentar o conhecimento."
+    st.markdown("## 5. Procure sempre estar se questionando e pesquisando sobre conteúdos presentes nas obras literárias, para aumentar o conhecimento.")
     st.write("Para o hábito de leitura continuar existindo e se tornar cada vez mais presente no dia a dia!")         
 import streamlit as st
 import requests
