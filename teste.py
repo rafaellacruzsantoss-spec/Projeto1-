@@ -47,7 +47,7 @@ try:
         st.error(f"Erro ao conectar: {response.status_code}")
 except Exception as e:
     st.error(f"Ocorreu um erro: {e}")
- st.write(f"📖 {livro['titulo']} — escrito por: *{livro['autor']}")
+
 
 
 
