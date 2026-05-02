@@ -26,7 +26,6 @@ autor_input = st.text_input("Digite o nome do autor:")
 if autor_input:
     # Formatamos o texto para a URL (substituindo espaços por +)
     autor_formatado = autor_input.strip().replace(" ", "+")
-  import streamlit as st
 
 # 1. Capture o input do usuário primeiro
 autor_input = st.text_input("Digite o nome do autor para buscar no Goodreads:")
