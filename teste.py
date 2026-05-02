@@ -26,8 +26,6 @@ response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, "html.parser")
 # 5. Criar a "sopa" para ler o HTML
 soup = BeautifulSoup(response.content, "html.parser")
-# 6. Procurar o que você quer
-elemento = soup.find("div", {"stactiText": "Livros"})
 # Supondo que os títulos estejam em tags <h3> e autores em <span>
 titulos = soup.find_all("h3")
 autores = soup.find_all("span")
