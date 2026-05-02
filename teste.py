@@ -13,11 +13,11 @@ import streamlit as st
 
 # Criando o menu na barra lateral
 with st.sidebar:
-    st.title("📌 Navegação")
+    st.title("Sugestôes para iniciantes")
     # O selectbox funciona como o seletor do menu
     menu = st.radio(
         "Escolha uma opção:",
-        ("Buscar Livros", "Meus Favoritos", "Sobre o Projeto")
+        ("Buscar Livros", "Dicas")
     )
 
 # Lógica do Menu
@@ -28,13 +28,10 @@ if menu == "Buscar Livros":
     if autor:
         st.markdown(f"### 📖 Resultados para {autor}")
 
-elif menu == "Meus Favoritos":
-    st.header("⭐ Livros Salvos")
-    st.write("Sua lista de leitura aparecerá aqui.")
-
-elif menu == "Sobre o Projeto":
-    st.header("ℹ️ Sobre")
-    st.write("Este site utiliza scraping do Goodreads para organizar sua biblioteca.")
+elif menu == "Dicas para iniciantes":
+    st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:"
+    st.write("
+             
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
