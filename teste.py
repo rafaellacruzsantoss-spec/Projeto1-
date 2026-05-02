@@ -26,7 +26,7 @@ autor_para_buscar = pesquisa if pesquisa else "Clarice Lispector"
 
 # --- PARTE 2: A CONEXÃO ---
 # Vamos usar o Google Books ou um site de busca para encontrar os títulos
-url = f"https://www.google.com/search?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
+url = f"https://www.amazon.com.br/b?ie=UTF8&node=203733243011?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
 
 try:
     response = requests.get(url, headers=headers)
