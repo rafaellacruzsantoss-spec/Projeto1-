@@ -26,15 +26,6 @@ st.write(f"Status: {response.status_code}")
 
 # Agora transformamos o conteúdo em algo "legível" para o Python
 soup = BeautifulSoup(response.content, "html.parser")
-
-# Exemplo: Pegar o texto de uma div que tem a classe 'autor'
-elemento = soup.find("div", {"class": "autor"})
-
-if elemento:
-    st.subheader("Informação encontrada:")
-    st.write(elemento.text) # Mostra o texto que está dentro da div
-else:
-    st.warning("Conectei ao site, mas não encontrei o que você procurou.")
 # 5. Criar a "sopa" para ler o HTML
 soup = BeautifulSoup(response.content, "html.parser")
 # 6. Procurar o que você quer
