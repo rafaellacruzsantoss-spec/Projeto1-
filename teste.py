@@ -56,8 +56,6 @@ except Exception as e:
 # --- PARTE 3: LISTA PRONTA DE OUTROS AUTORES ---
 st.sidebar.header("Sugestões de Autores")
 # Verifique se a lista não está nula/vazia
-if outros_autores:
-    st.subheader("Outras sugestões para você:")
 for sugerido in outros_autores:
         # Usando o H3 (###) para manter a organização
         st.write(f"### 📖 {sugerido['titulo']}")
