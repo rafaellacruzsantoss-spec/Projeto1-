@@ -16,9 +16,8 @@ from bs4 import BeautifulSoup
 st.title("📚 Explorador de Livros")
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/11"}
 
-# --- PARTE 1: BARRA DE PESQUISA ---
-st.subheader("Pesquisar novo autor")
-pesquisa = st.text_input("Digite o nome do autor:")
+# 1. Primeiro você cria o input
+autor_para_buscar = st.text_input("Digite o nome do autor:")
 
 # 2. Só executa se a variável não estiver vazia
 if autor_para_buscar:
