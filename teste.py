@@ -52,7 +52,6 @@ else:
     page_title="Guia de Livros ",
     page_icon="📚",
     layout="wide"
-)
 st.divider() # Cria uma linha horizontal
 st.caption("Desenvolvido por Rafaella Cruz Santos | Dados via Goodreads")
  
