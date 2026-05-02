@@ -29,7 +29,7 @@ elif menu == "Buscar Livros":
 elif menu == "Dicas":
     st.title("💡 Dicas para iniciantes")
     st.markdown("### 1.Escolher temas de interesse ajudam a criar um ambiente mais confortável e que desperte mais curiosidade em determinados assuntos")
-    st.markdown("### 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico."
+    st.markdown("### 2. Leitura compartilhada, junte seus familiares e amigos ou até mesmo use suas redes sociais pra expor e procurar comentários acerca da leitura, isso estimulaa formação do senso crítico.")
     st.write("Para o hábito de leitura continuar existindo e se tornar cada vez mais presente no dia a dia!")         
 import streamlit as st
 import requests
