@@ -15,8 +15,7 @@ import streamlit as st
 with st.sidebar:
     st.title("Sugestões para iniciantes")
     # O selectbox funciona como o seletor do menu
-    menu = st.radio(
-        "Escolha uma opção:"
+    menu = st.radio
         ("Buscar Livros", "Dicas")
 
 # Lógica do Menu
