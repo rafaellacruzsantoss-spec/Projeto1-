@@ -22,7 +22,7 @@ autor_para_buscar = st.text_input("Digite o nome do autor:")
 if autor_para_buscar:
     url = f"https://www.goodreads.com/search?q={autor_para_buscar.replace(' ', '+')}"
     st.write(f"### 🔗 Link de busca para: {autor_para_buscar}")
-    st.link_button("Ver no Goodreads", url:"https://www.goodreads.com/search")
+    st.link_button("Ver no Goodreads", url)
 try:
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
