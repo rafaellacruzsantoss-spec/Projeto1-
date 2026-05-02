@@ -29,7 +29,7 @@ if menu == "Buscar Livros":
         st.markdown(f"### 📖 Resultados para {autor}")
 
 elif menu == "Dicas para iniciantes":
-    st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:"
+    st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:")
              
 import streamlit as st
 import requests
