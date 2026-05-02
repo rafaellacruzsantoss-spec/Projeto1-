@@ -22,7 +22,14 @@ pesquisa = st.text_input("Digite o nome de um autor:")
 
 
 # --- PARTE 2: A CONEXÃO ---
-url = f"https://www.goodreads.com/?q=livros+de+{autor_para_buscar.replace(' ', '+')}"
+# 1. Primeiro você cria o input
+autor_para_buscar = st.text_input("Digite o nome do autor:")
+
+# 2. Só executa se a variável não estiver vazia
+if autor_para_buscar:
+    url = f"https://www.goodreads.com/search?q={autor_para_buscar.replace(' ', '+')}"
+    st.write(f"### 🔗 Link de busca para: {autor_para_buscar}")
+    st.link_button("Ver no Goodreads", url)
 
 try:
     response = requests.get(url, headers=headers)
