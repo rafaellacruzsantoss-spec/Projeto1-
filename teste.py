@@ -48,19 +48,6 @@ try:
 except Exception as e:
     st.error(f"Ocorreu um erro: {e}")
 
-# --- PARTE 3: LISTA PRONTA DE OUTROS AUTORES ---
-st.sidebar.header("Sugestões de Autores")
-# Verifique se a lista não está nula/vazia
-for sugerido in outros_autores:
-        # Usando o H3 (###) para manter a organização
-        st.write(f"### 📖 {sugerido['titulo']}")
-        st.write(f"**Escrito por:** {sugerido['autor']}")
-        st.divider()
-for sugerido in outros_autores:
-    if st.sidebar.button(sugerido):
-        # Esse botão recarrega a página pesquisando o autor clicado
-        st.info(f"Clique na barra de pesquisa e digite '{sugerido}' para explorar!")
-
     st.write(f"📖 {livro['titulo']} — escrito por: *{livro['autor']}*")
 
 
