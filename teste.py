@@ -21,12 +21,9 @@ with st.sidebar:
     )
 
 # Lógica do Menu
-if menu == "Buscar Livros":
-    st.header("🔍 Scraper de Livros")
-    autor = st.text_input("Digite o autor:")
-    # ... aqui vai o seu código de scraping com H3 ...
-    if autor:
-        st.markdown(f"### 📖 Resultados para {autor}")
+if menu == "Inicío":
+    st.header("🔍")
+    
 
 elif menu == "Dicas para iniciantes":
     st.write("Para o hábito de ler continuar existindo e se tornar cada vez mais presente no dia a dia, segue dicas para melhorar sua leitura:")
